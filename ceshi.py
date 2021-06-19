@@ -34,7 +34,8 @@ def over(ip,xieyi_1):#显示活的代理ip
     txt = f'{xieyi_1}.txt'
     open(f"{xieyi_1}.txt", 'w').close()#清空文本
 #    time = "`date '+%T %D'`"
-    os.system(f"echo '#更新时间为：`date '+%T %D'`'>{txt}")
+    os.system(f"echo '#更新时间为：'>{txt}")
+    os.system(f"echo `date '+%T %D'`>>{txt}")
     #for i in range(ip_num):        
     for i in range(5):        
         try:                
