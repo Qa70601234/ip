@@ -33,7 +33,8 @@ def over(ip,xieyi_1):#显示活的代理ip
     #url = 'https://www.baidu.com/'
     txt = f'{xieyi_1}.txt'
     open(f"{xieyi_1}.txt", 'w').close()#清空文本
-    os.system(f"echo `date '+%T %D'`>{txt}")
+    time = "`date '+%T %D'`"
+    os.system(f"echo `#更新时间为：{time}`>{txt}")
     #for i in range(ip_num):        
     for i in range(10):        
         try:                
