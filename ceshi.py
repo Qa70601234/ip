@@ -1,16 +1,9 @@
 #!/usr/bin/env python3
 #-*- coding:utf-8 -*-
-<<<<<<< HEAD
-from bs4.builder import HTML
-import requests,time,random
-from bs4 import BeautifulSoup as bs
-=======
-
 from bs4.builder import HTML
 import requests,time,random
 from bs4 import BeautifulSoup as bs
 from requests.api import head
->>>>>>> 91d993326f9e66f9a7bb02669bfd68400489842f
 
 
 
@@ -64,7 +57,7 @@ def over(ip,xieyi_1):#显示活的代理ip
 if __name__ == '__main__':
     xieyi = ['http','https','socks4','socks5']
     xieyi_1 = random.choice(xieyi)#随机协议
-    #xieyi_1 = 'socks4'
+    #xieyi_1 = 'https'
     url = f'https://www.proxy-list.download/api/v1/get?type={xieyi_1}'
     #print(url)
     path = down(url)
