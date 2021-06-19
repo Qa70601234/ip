@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 #-*- coding:utf-8 -*-
 from bs4.builder import HTML
-import requests,time,random
+import requests,time,random,os
 from bs4 import BeautifulSoup as bs
 from requests.api import head
 
@@ -31,7 +31,9 @@ def over(ip,xieyi_1):#显示活的代理ip
     #url = 'http://ip.cn/'
     #url = 'http://www.cip.cc/'
     #url = 'https://www.baidu.com/'
+    txt = f'{xieyi_1}.txt'
     open(f"{xieyi_1}.txt", 'w').close()#清空文本
+    os.system(f"echo `date '+%T %D'`>{txt}")
     #for i in range(ip_num):        
     for i in range(10):        
         try:                
