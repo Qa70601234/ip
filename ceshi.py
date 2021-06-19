@@ -38,7 +38,7 @@ def over(ip,xieyi_1):#显示活的代理ip
     os.system(f"echo '#更新时间为：{time_1}'>{txt}")
     #os.system(f"echo -n `date '+%T %D'`>>{txt}")
     #for i in range(ip_num):        
-    for i in range(5):        
+    for i in range(ip_num):        
         try:                
             proxy_data={'http':f'{xieyi_1}://'+ip[i],
                         'https':f'{xieyi_1}://'+ip[i]}
