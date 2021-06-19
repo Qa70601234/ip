@@ -1,8 +1,16 @@
 #!/usr/bin/env python3
 #-*- coding:utf-8 -*-
+<<<<<<< HEAD
 from bs4.builder import HTML
 import requests,time,random
 from bs4 import BeautifulSoup as bs
+=======
+
+from bs4.builder import HTML
+import requests,time,random
+from bs4 import BeautifulSoup as bs
+from requests.api import head
+>>>>>>> 91d993326f9e66f9a7bb02669bfd68400489842f
 
 
 
