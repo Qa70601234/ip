@@ -32,7 +32,8 @@ def over(ip,xieyi_1):#显示活的代理ip
     #url = 'http://www.cip.cc/'
     #url = 'https://www.baidu.com/'
     open(f"{xieyi_1}.txt", 'w').close()#清空文本
-    for i in range(ip_num):        
+    #for i in range(ip_num):        
+    for i in range(10):        
         try:                
             proxy_data={'http':f'{xieyi_1}://'+ip[i],
                         'https':f'{xieyi_1}://'+ip[i]}
@@ -55,9 +56,9 @@ def over(ip,xieyi_1):#显示活的代理ip
             pass
     return f'总共有{num_1}个有效ip'
 if __name__ == '__main__':
-    xieyi = ['http','https','socks4','socks5']
-    xieyi_1 = random.choice(xieyi)#随机协议
-    #xieyi_1 = 'https'
+    #xieyi = ['http','https','socks4','socks5']
+    #xieyi_1 = random.choice(xieyi)#随机协议
+    xieyi_1 = 'http'
     url = f'https://www.proxy-list.download/api/v1/get?type={xieyi_1}'
     #print(url)
     path = down(url)
