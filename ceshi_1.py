@@ -1,16 +1,8 @@
 #!/usr/bin/env python3
 #-*- coding:utf-8 -*-
-<<<<<<< HEAD
 from bs4.builder import HTML
 import requests,time,random
 from bs4 import BeautifulSoup as bs
-=======
-
-from bs4.builder import HTML
-import requests,time,random
-from bs4 import BeautifulSoup as bs
-from requests.api import head
->>>>>>> 91d993326f9e66f9a7bb02669bfd68400489842f
 
 
 
@@ -32,8 +24,7 @@ def over(ip,xieyi_1):#显示活的代理ip
     num = 1
     num_1 = 1
     ip_num = len(ip)
-    print(f'协议为{xieyi_1},一共获取{ip_num}个代理ip')
-    
+   # print(f'协议为{xieyi_1},一共获取{ip_num}个代理ip')   
     url = 'http://ip-api.com/json/?fields=61439'
     #url = 'http://ip.cn/'
     #url = 'http://www.cip.cc/'
@@ -71,3 +62,4 @@ if __name__ == '__main__':
     ip = ip()
     for i in over(ip,xieyi_1):
         print(i)
+
